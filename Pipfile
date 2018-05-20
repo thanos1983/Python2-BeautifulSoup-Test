@@ -9,6 +9,7 @@ name = "pypi"
 beautifulsoup = "*"
 requests = "*"
 lxml = "*"
+"beautifulsoup4" = "*"
 
 [requires]
 python_version = "2.7"

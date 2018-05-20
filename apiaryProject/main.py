@@ -42,11 +42,9 @@ class SampleOfSolutions:
         return output
 
     def possible_solution_three(self):
-        # extract matching elements based on regex
-        matched_elements = \
-            [match.get('id') for match in self.soup.find_all('div',
-                                                             id=re.compile("application"))]
-        return matched_elements
+        # extract all matching elements based on regex
+        return [match.get('id') for match in self.soup.find_all('div',
+                                                                id=re.compile("application"))]
 
 
 if __name__ == '__main__':
